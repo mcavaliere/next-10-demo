@@ -11,7 +11,7 @@ const buttonClicksFilePath = path.join(
 
 export function getButtonClicksData() {
   const data = fs.readFileSync(buttonClicksFilePath);
-  return JSON.parse(data);
+  return JSON.parse(data.toString());
 }
 
 export function getButtonClicksCount() {

@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Home({ staticButtonClicks }) {
-  const [clicks, setClicks] = useState(0);
+  const [clicks, setClicks] = useState(staticButtonClicks);
 
   async function onButtonClick() {
     await fetch('/api/click', {
